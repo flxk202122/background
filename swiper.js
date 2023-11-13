@@ -17,4 +17,16 @@ window.addEventListener('load', function () {
             pauseOnMouseEnter: true
         },
     });
+    var togglestatu = true;
+
+    document.querySelector(".toggle").addEventListener("click", function () {
+        this.classList.toggle('stop');
+        togglestatu = this.classList.contains('stop');
+
+        if (togglestatu) {
+            swiper.autoplay.stop();
+        } else {
+            swiper.autoplay.start();
+        }
+    })
 })
