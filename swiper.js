@@ -5,6 +5,7 @@ window.addEventListener('load', function () {
 
         pagination: {
             el: '#mainBanner .swiper-pagination',
+            clickable: true,
         },
         navigation: {
             nextEl: '#mainBanner .swiper-button-next',
